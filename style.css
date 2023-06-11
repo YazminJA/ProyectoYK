@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.row{
+    display: flex;
+    height: 100vh;
+}
+.s1{
+    width: 10%;
+    background-color: aqua;
+}
+.s8{
+    width: 80%;
+    background-color: crimson;
+}
+
+@media only screen and (max-width:768px){
+    .row{
+        display: block;
+    }
+    [class*="s-1"]{
+        width: 100%;
+        background-color: aqua;
+
+    }
+    [class*="s-8"]{
+        width: 100%;
+        background-color:crimson;
+        
+    }
+}
